@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-page text-ink antialiased;
+  background:
+    linear-gradient(180deg, #fffefd 0%, #f8f7f2 48%, #f3f1ea 100%);
+  min-height: 100vh;
+}
+
+::selection {
+  @apply bg-primary text-white;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
