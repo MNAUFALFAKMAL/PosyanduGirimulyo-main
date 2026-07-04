@@ -46,7 +46,7 @@ export default function LoginForm() {
         </div>
         <h1 className="text-2xl font-bold text-ink">Login Kalkulator</h1>
         <p className="mt-2 text-sm leading-6 text-slate-600">
-          Masuk sesuai lokasi Plamboyan agar data tersimpan di tempat yang benar.
+          Masuk sesuai lokasi agar data tersimpan di tempat yang benar.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ export default function LoginForm() {
             autoComplete="email"
             className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-800 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15"
             id="email"
-            placeholder="admin@posyandu.com"
+            placeholder="Masukkan email"
             type="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
@@ -103,9 +103,6 @@ export default function LoginForm() {
         </button>
       </form>
 
-      <p className="mt-5 text-center text-xs leading-6 text-slate-500">
-        Gunakan akun yang sudah diberikan kepada kader masing-masing Plamboyan.
-      </p>
     </main>
   );
 }
